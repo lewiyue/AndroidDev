@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Services演示</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- 用于local service -->
+    <string name="localButton1">获取随机值</string>
+
+    <!-- 用于Messenger service -->
+    <string name="messengerButton1">发送HELLO</string>
+    
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AnroidTestApp</string>
+    <string name="action_settings">Settings</string>
+	
+	<!-- 在sharedpreferences中使用 -->
+	<string name="sharedpreferences">sharedpreferences demo</string>
+	<string name="button">Change value</string>
+	<string name="hello_world">Hello world!</string>
+	
+	<!-- 在service中使用 -->
+	<string name="service">Service demo</string>
+	<string name="bind">绑定服务</string>
+	<string name="unbind">解除服务</string>
+	
+</resources>
