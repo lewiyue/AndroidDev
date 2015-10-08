@@ -10,5 +10,6 @@
 
     <!-- 用于Messenger service -->
     <string name="messengerButton1">发送HELLO</string>
+    <string name="serviceStatus">Service状态</string>
     
 </resources>

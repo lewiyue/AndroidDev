@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
 import android.os.Messenger;
@@ -17,8 +18,17 @@ import android.os.RemoteException;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * @author lyue
+ * 功能：
+ * 1 UI界面，用于和用户交互
+ * 2 LocalService的交互
+ * 3 MessengerService的交互
+ * 4 AIDL Service的启动，UI操作部分在另一个app里面
+ */
 public class MainActivity extends Activity {
 
 	public final static String mTag = "lewi";
@@ -46,8 +56,24 @@ public class MainActivity extends Activity {
 	
 	//------------------Messenger Service
 	Messenger mService = null;
-	Button mMessengerButton;
+	Button mMessengerButton,mBindButton,mUnBindButton;
 	Boolean mMessengerBound=false;
+	TextView mCallBackText;
+	Messenger mMessenger = new Messenger(new IncomingHandler());
+	int n=0;
+	
+	class IncomingHandler extends Handler{
+		@Override
+		public void handleMessage(Message msg) {
+			switch(msg.what){
+			case MessengerService.MSG_SAY_HELLO:
+					mCallBackText.setText("Received from Servcie : " + msg.arg1);
+			default:
+					super.handleMessage(msg);
+			
+			}
+		}
+	}
 	
 	private ServiceConnection mMessengerConn = new ServiceConnection() {
 		
@@ -56,25 +82,63 @@ public class MainActivity extends Activity {
 			if(mMessengerBound){
 				mService = null;
 				mMessengerBound = false;
-			}
+				mCallBackText.setText("Disconnected.");
+			}		
 		}
 		
 		@Override
 		public void onServiceConnected(ComponentName name, IBinder service) {
 			mService = new Messenger(service);
-			mMessengerBound = true;	
+			mMessengerBound = true;		
+			mCallBackText.setText("Attached");
+			try {
+				Message msg = Message.obtain(null, MessengerService.MSG_REGISTER_CLIENT);
+				
+				mService.send(msg);
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}	
 		}
 	};
 	
 	//发送hello
 	public void sayHello(){
-		if(!mMessengerBound) return;
-		Message mMessage = Message.obtain(null, MessengerService.MSG_SAY_HELLO, 0, 0);
+		if(!mMessengerBound) {
+			Toast.makeText(this, "Bind Service First", Toast.LENGTH_SHORT).show();
+			return;
+		}
+		Message mMessage = Message.obtain(null, MessengerService.MSG_SAY_HELLO, n++, 0);
+		mMessage.replyTo = mMessenger;
 		try {
 			mService.send(mMessage);
 		} catch (RemoteException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+	}
+	
+	void doBindService(){
+		//绑定到Messenger Service
+		Intent MessengerServiceIntent = new Intent(this, MessengerService.class);
+		bindService(MessengerServiceIntent,mMessengerConn,Context.BIND_AUTO_CREATE);
+	}
+	
+	void doUnBindService(){
+		//解绑Messenger Service
+		if(mMessengerBound){
+			if(mService!=null){
+				Message msg = Message.obtain(null, MessengerService.MSG_UNREGISTER_CLIENT);
+				try {
+					mService.send(msg);
+				} catch (RemoteException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			unbindService(mMessengerConn);
+			mMessengerBound = false;
+			mCallBackText.setText("Unbinding.");
 		}
 	}
 	
@@ -106,35 +170,44 @@ public class MainActivity extends Activity {
 				sayHello();	
 			}
 		});		
+		mCallBackText = (TextView)findViewById(R.id.callbackText);
+		
+		mBindButton = (Button)findViewById(R.id.bindButton);
+		mBindButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				doBindService();
+				
+			}
+		});
+		
+		mUnBindButton = (Button)findViewById(R.id.unBindButton);
+		mUnBindButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				doUnBindService();		
+			}
+		});
 	}
 
 	@Override
 	protected void onStart() {
-		super.onStart();
-		
+		super.onStart();		
 		//绑定到LocalService
 		Intent LocalServiceIntent = new Intent(this, LocalService.class);
 		bindService(LocalServiceIntent, LocalServiceConn, Context.BIND_AUTO_CREATE);
 		
-		//绑定到Messenger Service
-		Intent MessengerServiceIntent = new Intent(this, MessengerService.class);
-		bindService(MessengerServiceIntent,mMessengerConn,Context.BIND_AUTO_CREATE);
 	}
 
 	@Override
 	protected void onPause() {
-		super.onPause();
-		
+		super.onPause();		
 		//解绑LocalService
 		if(mLocalServiceBound){
 			unbindService(LocalServiceConn);
 			mLocalServiceBound = false;
-		}
-		
-		//解绑Messenger Service
-		if(mMessengerBound){
-			unbindService(mMessengerConn);
-			mMessengerBound = false;
-		}
+		}	
 	}	
 }
