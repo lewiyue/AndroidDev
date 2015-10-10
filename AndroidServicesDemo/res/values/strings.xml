@@ -12,4 +12,10 @@
     <string name="messengerButton1">发送HELLO</string>
     <string name="serviceStatus">Service状态</string>
     
+    <!-- 用于AIDL service -->
+    <string name="aidlButton">调用AIDLService</string>
+    
+    <!-- 用于Started service -->
+    <string name="startedButton">启动Service</string>
+    
 </resources>

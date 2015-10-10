@@ -29,6 +29,16 @@
             android:name="com.lewi.androidservicesdemo.services.MessengerService"
             android:label="MessengerService"
             android:process=":remote">
-        </service>"
+        </service>
+        <service
+            android:name="com.lewi.androidservicesdemo.services.StartedService">
+        </service>
+        <service
+            android:name="com.lewi.androidservicesdemo.services.aidlService">
+            <intent-filter>
+                <action android:name="lewiyue.Service"/>
+            </intent-filter>
+        </service>
+        
     </application>
 </manifest>

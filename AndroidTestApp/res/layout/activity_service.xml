@@ -6,13 +6,19 @@
 
     <Button
         android:id="@+id/bind"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/bind" />
 
     <Button
+        android:id="@+id/getValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getvalue" />
+    
+    <Button
         android:id="@+id/unbind"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/unbind" />
 

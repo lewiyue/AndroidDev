@@ -3,6 +3,7 @@ package com.lewi.androidservicesdemo;
 import com.lewi.androidservicesdemo.services.LocalService;
 import com.lewi.androidservicesdemo.services.LocalService.LocalBinder;
 import com.lewi.androidservicesdemo.services.MessengerService;
+import com.lewi.androidservicesdemo.services.StartedService;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -52,7 +53,6 @@ public class MainActivity extends Activity {
 			mLocalServiceBound = true;
 		}
 	};	
-	//--------------------
 	
 	//------------------Messenger Service
 	Messenger mService = null;
@@ -141,8 +141,13 @@ public class MainActivity extends Activity {
 			mCallBackText.setText("Unbinding.");
 		}
 	}
+		
+	//------------------IntentService
 	
-	//---------------------
+	Button mIntentButton;
+	
+	//----------------------
+	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -188,6 +193,17 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				doUnBindService();		
+			}
+		});
+		
+		mIntentButton = (Button)findViewById(R.id.startedButton);
+		mIntentButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent startedServiceIntent = new Intent(MainActivity.this, StartedService.class);
+				startService(startedServiceIntent);		
+				Log.i(StartedService.StartedTag, "Trigger button");
 			}
 		});
 	}

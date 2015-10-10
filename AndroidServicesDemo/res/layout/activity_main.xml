@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Local Server Demo" />    
-        <Button
+    <Button
             android:id="@+id/localservicebutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,37 +28,65 @@
             android:layout_marginTop="90dp"
             android:text="Messenger Service Demo" />  
 
-      <Button
-          android:id="@+id/bindButton"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-			android:layout_marginTop="110dp"
-          android:text="Bind" />
+     <Button
+          	android:id="@+id/bindButton"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+		  	android:layout_marginTop="110dp"
+          	android:text="Bind" />
       
-		<Button
-                android:id="@+id/messengerbutton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="110dp"
-                android:layout_toRightOf="@id/bindButton"
-                android:text="@string/messengerButton1" />
+	  <Button
+          	android:id="@+id/messengerbutton"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+          	android:layout_marginStart="10dp"
+          	android:layout_marginTop="110dp"
+          	android:layout_toRightOf="@id/bindButton"
+          	android:text="@string/messengerButton1" />
 
       <Button
-        android:id="@+id/unBindButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-		android:layout_marginTop="110dp"
-		android:layout_toRightOf="@id/messengerbutton"
-        android:text="UnBind" />
+       	 	android:id="@+id/unBindButton"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginStart="10dp"
+			android:layout_marginTop="110dp"
+			android:layout_toRightOf="@id/messengerbutton"
+        	android:text="UnBind" />
       
        <TextView
-          android:id="@+id/callbackText"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginStart="50dp"
-          android:layout_marginTop="170dp"
-          android:text="@string/serviceStatus" />
+          	android:id="@+id/callbackText"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+          	android:layout_marginStart="50dp"
+          	android:layout_marginTop="170dp"
+          	android:text="@string/serviceStatus" />
+       
+       <!-- 用于AIDL Service 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:text="AIDL Service Demo" />  
+            
+        <Button
+          	android:id="@+id/aidlButton"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+		  	android:layout_marginTop="250dp"
+          	android:text="@string/aidlButton" />
+       -->
+       <!-- 用于Started Service: extends IntentService -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:text="IntentService Demo" /> 
+        
+        <Button
+          	android:id="@+id/startedButton"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+		  	android:layout_marginTop="250dp"
+          	android:text="@string/startedButton" /> 
           
 </RelativeLayout>
