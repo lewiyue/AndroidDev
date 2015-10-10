@@ -1,6 +1,7 @@
 ## 1 AndroidServicesDemo项目实现了如下Services Demo
 #### - Started Serviced： 扩展了IntentService类
-    UI类： [MainActivity.java](https://github.com/lewiyue/AndroidDev/tree/master/AndroidServicesDemo/src/com/lewi/androidservicesdemo/MainActivity.java)<br>
+    
+  UI类：[MainActivity.java](https://github.com/lewiyue/AndroidDev/tree/master/AndroidServicesDemo/src/com/lewi/androidservicesdemo/MainActivity.java)<br>
   Service类：[services/StartedService.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidServicesDemo/src/com/lewi/androidservicesdemo/services/StartedService.java)<br>
 #### - BoundService：LocalService
   UI类：[MainActivity.java](https://github.com/lewiyue/AndroidDev/tree/master/AndroidServicesDemo/src/com/lewi/androidservicesdemo/MainActivity.java)<br>
