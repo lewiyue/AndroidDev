@@ -1,6 +1,7 @@
 package com.lewi.ui;
 
 import com.lewi.anroidtestapp.R;
+import com.lewi.intent.IntentActivity;
 import com.lewi.service.ServiceActivity;
 import com.lewi.sharedpreferences.SharedPreferencesDemoActivity;
 
@@ -12,7 +13,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-	Button mSPsButton,mServiceButton;
+	Button mSPsButton,mServiceButton,mIntentButton;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,19 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent i = new Intent(MainActivity.this,ServiceActivity.class);
+				startActivity(i);
+			}
+		});
+		
+		
+		//使用此按钮跳转到Intent Demo页面
+		mIntentButton = (Button)findViewById(R.id.intent);
+		mIntentButton.setOnClickListener(new View.OnClickListener()
+		{
+			
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(MainActivity.this,IntentActivity.class);
 				startActivity(i);
 			}
 		});

@@ -23,5 +23,13 @@
          android:layout_alignLeft="@+id/sharedpreferences"
          android:layout_below="@+id/sharedpreferences"
          android:text="@string/service" />
+     
+     <Button
+         android:id="@+id/intent"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/service"
+         android:layout_below="@+id/service"
+         android:text="@string/intent" />
 
 </RelativeLayout>

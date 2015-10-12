@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/homescreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/homescreen" />
+
+    <Button
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mail" />
+    
+    <Button
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/address" />
+    
+    <Button
+        android:id="@+id/dail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dail" />
+    
+
+</LinearLayout>

@@ -15,4 +15,11 @@
 	<string name="getvalue">获取Service进程号</string>
 	<string name="unbind">解除服务</string>
 	
+	<!-- 在Intent中使用 -->
+	<string name="intent">Intent demo</string>
+	<string name="homescreen">打开主屏幕</string>
+	<string name="mail">发送Mail</string>
+	<string name="address">打开通讯录</string>
+	<string name="dail">拨打电话</string>
+	
 </resources>
