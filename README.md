@@ -18,6 +18,8 @@
 ## 2 AndroidTestApp项目
   入口UI类: [MainActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/ui/MainActivity.java)<br>
 #### - sharedpreferences存储
-  UI类：[services/SharedPreferencesDemoActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/sharedpreferences/SharedPreferencesDemoActivity.java)<br>
+  UI类：[sharedpreferences/SharedPreferencesDemoActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/sharedpreferences/SharedPreferencesDemoActivity.java)<br>
 #### - ADIL Service的Client
   UI类：[services/ServiceActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/service/ServiceActivity.java)<br>
+  #### - Intent类
+  UI类：[intent/IntentActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/intent/IntentActivity.java)<br>
