@@ -21,5 +21,5 @@
   UI类：[sharedpreferences/SharedPreferencesDemoActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/sharedpreferences/SharedPreferencesDemoActivity.java)<br>
 #### - ADIL Service的Client
   UI类：[services/ServiceActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/service/ServiceActivity.java)<br>
-  #### - Intent类
+#### - Intent类
   UI类：[intent/IntentActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/intent/IntentActivity.java)<br>
