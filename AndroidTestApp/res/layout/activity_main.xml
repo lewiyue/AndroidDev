@@ -31,5 +31,13 @@
          android:layout_alignLeft="@+id/service"
          android:layout_below="@+id/service"
          android:text="@string/intent" />
+     
+     <Button
+         android:id="@+id/contentproviderdemo"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/intent"
+         android:layout_below="@+id/intent"
+         android:text="@string/contentproviderdemo" />
 
 </RelativeLayout>

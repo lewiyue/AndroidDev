@@ -1,6 +1,7 @@
 package com.lewi.ui;
 
 import com.lewi.anroidtestapp.R;
+import com.lewi.contentprovider.ContentProviderActivity;
 import com.lewi.intent.IntentActivity;
 import com.lewi.service.ServiceActivity;
 import com.lewi.sharedpreferences.SharedPreferencesDemoActivity;
@@ -13,7 +14,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-	Button mSPsButton,mServiceButton,mIntentButton;
+	Button mSPsButton,mServiceButton,mIntentButton,mContentProviderButton;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,16 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				Intent i = new Intent(MainActivity.this,IntentActivity.class);
 				startActivity(i);
+			}
+		});
+		
+		mContentProviderButton = (Button)findViewById(R.id.contentproviderdemo);
+		mContentProviderButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(MainActivity.this,ContentProviderActivity.class);
+				startActivity(i);				
 			}
 		});
 	}

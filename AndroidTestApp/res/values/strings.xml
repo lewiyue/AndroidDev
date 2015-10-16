@@ -22,4 +22,16 @@
 	<string name="address">打开通讯录</string>
 	<string name="dail">拨打电话</string>
 	
+	<!-- 在Content Provider中使用 -->
+	<string name="contentproviderdemo">Content Provider demo</string>
+	<string name="intentaccess">访问日历数据</string>
+	<string name="intentgetbutton">Intent获取日历2012年2月</string>
+	<string name="contentR_getbutton">ContentResolver获取</string>
+	<string name="contentR_setbutton">ContentResolver更新</string>
+	<string name="contentprovider">访问自己的Content Provider程序</string>
+	<string name="contentprovider_query_button">Query</string>
+	<string name="contentprovider_insert_button">Insert</string>
+	<string name="contentprovider_update_button">Update</string>
+	<string name="contentprovider_delete_button">Delete</string>
+	
 </resources>
