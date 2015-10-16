@@ -6,7 +6,7 @@
   UI类：[services/ServiceActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/service/ServiceActivity.java)<br>
 #### - Intent类
   UI类：[intent/IntentActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/intent/IntentActivity.java)<br>
-  #### - Content Provider
+#### - Content Provider
   UI类：[ContentProviderActivity.java](https://github.com/lewiyue/AndroidDev/tree/master/AndroidServicesDemo/src/com/lewi/contentprovider/ContentProviderActivity.java)<br>
   ContentProvder类：[todo.java](todo)<br>
 
