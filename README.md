@@ -1,7 +1,5 @@
 ## 1 AndroidTestApp项目
   入口UI类: [MainActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/ui/MainActivity.java)<br>
-#### - sharedpreferences存储
-  UI类：[sharedpreferences/SharedPreferencesDemoActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/sharedpreferences/SharedPreferencesDemoActivity.java)<br>
 #### - ADIL Service的Client
   UI类：[services/ServiceActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/service/ServiceActivity.java)<br>
 #### - Intent类
@@ -9,6 +7,17 @@
 #### - Content Provider
   UI类：[ContentProviderActivity.java](https://github.com/lewiyue/AndroidDev/tree/master/AndroidServicesDemo/src/com/lewi/contentprovider/ContentProviderActivity.java)<br>
   ContentProvder类(Robotium Repository中的RobotiumNotePad Project)：[NotePadProvider.java](https://github.com/lewiyue/Robotium/blob/master/RobotiumNotePad/src/com/example/android/notepad/NotePadProvider.java)<br>
+#### - BoardCast
+  UI类：[broadcast/BroadcastActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/broadcast/BroadcastActivity.java)<br>
+<br>
+#### - AsyncTask/Thread
+  UI类：[asynctask/AsyntaskActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/asynctask/AsyntaskActivity.java)<br>
+#### - sharedpreferences存储
+  UI类：[sharedpreferences/SharedPreferencesDemoActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/sharedpreferences/SharedPreferencesDemoActivity.java)<br>
+#### - Internal/External Storage
+  UI类：[storage/StorageActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/storage/StorageActivity.java)<br>
+#### - Process
+  UI类：[ProcessActivity.java](https://github.com/lewiyue/AndroidDev/blob/master/AndroidTestApp/src/com/lewi/ProcessActivity.java)<br>
 
 ## 2 AndroidServicesDemo项目实现了如下Services Demo
 #### - Started Serviced： 扩展了IntentService类
