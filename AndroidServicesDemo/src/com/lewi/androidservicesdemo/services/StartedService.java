@@ -5,6 +5,14 @@ import android.content.Intent;
 import android.util.Log;
 import android.widget.Toast;
 
+/**
+ * 
+ * @author lyue
+ *
+ * 这是Service类的子类，它使用了工作（worker）线程来处理所有的启动请求，
+ * 每次请求都会启动一个线程。如果服务不需要同时处理多个请求的话，这是最佳的选择。 所有你要做的工作就是实现onHandleIntent()即可，它会接收每个启动请求的intent，然后就可在后台完成工作。 
+ * 
+ */
 public class StartedService extends IntentService {
 
 	public static final String StartedTag = "StartedService";

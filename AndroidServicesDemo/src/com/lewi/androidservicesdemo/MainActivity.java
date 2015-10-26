@@ -29,6 +29,7 @@ import android.widget.Toast;
  * 2 LocalService的交互
  * 3 MessengerService的交互
  * 4 AIDL Service的启动，UI操作部分在另一个app里面
+ * 
  */
 public class MainActivity extends Activity {
 

@@ -7,6 +7,13 @@ import android.os.Process;
 import android.os.RemoteException;
 import com.lewi.aidl.myData;
 
+/**
+ * 
+ * @author lyue
+ * 实现了aidl Service接口
+ * 对外提供了两个接口类： getPid 和 touchEvent 方法
+ * 
+ */
 public class aidlService extends Service {
 
 	MyCommand myData;
