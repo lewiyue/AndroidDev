@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 四大组件中使用到的string -->
 <resources>
 
     <string name="app_name">AppTest</string>
@@ -33,5 +34,10 @@
 	<string name="contentprovider_insert_button">Insert</string>
 	<string name="contentprovider_update_button">Update</string>
 	<string name="contentprovider_delete_button">Delete</string>
+	
+	<!-- 在BroadCaster中使用 -->
+	<string name="boardcastdemo">BoardCast demo</string>
+    <string name="boardcastbutton1">获取重启次数</string>
+    <string name="boardcastbutton2">发送广播</string>
 	
 </resources>

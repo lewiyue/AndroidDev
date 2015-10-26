@@ -10,23 +10,39 @@
  
     <uses-permission android:name="android.permission.READ_CALENDAR"/>
     <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
-    
-     
+        
     <!-- 
   	<uses-permission android:name="com.example.notepad.provider.READ_PERMISSION"/>
- 
-  <uses-permission android:name="com.example.notepad.provider.WRITE_PERMISSION"/>
-  
-  <uses-permission android:name="com.example.notepad.provider.NotePad"/>
-  
+  	<uses-permission android:name="com.example.notepad.provider.WRITE_PERMISSION"/>
+ 	 <uses-permission android:name="com.example.notepad.provider.NotePad"/>
   -->
-       <uses-permission android:name="com.example.notepad.provider.NotePad"/>
-       
+    <uses-permission android:name="com.example.notepad.provider.NotePad"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+      
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.lewi.ProcessActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lewi.storage.StorageActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lewi.broadcast.BroadcastActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.lewi.asynctask.AsyntaskActivity"
+            android:label="@string/app_name" >
+        </activity>
         <activity
             android:name="com.lewi.contentprovider.ContentProviderActivity"
             android:label="@string/app_name" >
@@ -50,7 +66,14 @@
                 	<action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> 
+                
+        <receiver android:name="com.lewi.broadcast.RobootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.lewi.broadcast.rebootReceiver"/>
+            </intent-filter>  
+        </receiver>
         
         //需要测试本 app时，加入lib
         <uses-library android:name="android.test.runner"/>

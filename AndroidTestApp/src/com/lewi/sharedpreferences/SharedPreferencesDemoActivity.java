@@ -11,6 +11,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * 
+ * @author lyue
+ *
+ * 实现功能：
+ * 使用SharedPreferences存储和更新数据，确保数据可以持久化
+ *
+ */
 public class SharedPreferencesDemoActivity extends Activity {
 
 	static final int DAY_VIEW_MODE = 0;

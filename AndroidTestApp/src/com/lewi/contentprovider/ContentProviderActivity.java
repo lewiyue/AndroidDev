@@ -13,14 +13,26 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.provider.CalendarContract;
 import android.provider.CalendarContract.Calendars;
-import android.provider.CalendarContract.Events;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+/**
+ * 
+ * @author lyue
+ *
+ * 实现功能：
+ * 1 获取日历的数据
+ * - 通过Intent方式获取系统提供的ContentProvider
+ * - 通过ContentResolver对象获取和更新系统提供的ContentProvder
+ *
+ * 2 获取自己定义的NotePadProvider的数据
+ * - 实现了ContentProvider中的Query，Insert，Update，Delete操作
+ * - NotePadProvider的实现在另一个app中
+ */
 
 public class ContentProviderActivity extends Activity {
 

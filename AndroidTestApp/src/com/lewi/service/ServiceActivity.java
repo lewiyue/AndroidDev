@@ -16,7 +16,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-
+/**
+ * 
+ * @author lyue
+ *
+ * 实现功能：
+ *  - 绑定和解绑service
+ *  - 获取service的进程id信息
+ *  - Service的实现在另一个app进程中
+ *
+ */
 
 public class ServiceActivity extends Activity {
 

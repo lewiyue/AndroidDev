@@ -18,79 +18,133 @@ public final class R {
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int test=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080015;
-        public static final int address=0x7f08000a;
-        public static final int bind=0x7f080010;
-        public static final int button1=0x7f080013;
-        public static final int contentR_getbutton=0x7f080001;
-        public static final int contentR_setbutton=0x7f080002;
-        public static final int contentprovider_delete_button=0x7f080006;
-        public static final int contentprovider_insert_button=0x7f080004;
-        public static final int contentprovider_query_button=0x7f080003;
-        public static final int contentprovider_update_button=0x7f080005;
-        public static final int contentproviderdemo=0x7f08000f;
-        public static final int dail=0x7f08000b;
-        public static final int editText=0x7f080007;
-        public static final int getValue=0x7f080011;
-        public static final int homescreen=0x7f080008;
-        public static final int intent=0x7f08000e;
-        public static final int intentgetbutton=0x7f080000;
-        public static final int mail=0x7f080009;
-        public static final int service=0x7f08000d;
-        public static final int sharedpreferences=0x7f08000c;
-        public static final int textView1=0x7f080014;
-        public static final int unbind=0x7f080012;
+        public static final int Button4=0x7f08001c;
+        public static final int Processdemo=0x7f080018;
+        public static final int action_settings=0x7f080029;
+        public static final int address=0x7f08000e;
+        public static final int asyntask_imageView=0x7f080001;
+        public static final int asyntask_load=0x7f080000;
+        public static final int asyntaskdemo=0x7f080015;
+        public static final int bind=0x7f080020;
+        public static final int boardcast_button1=0x7f080002;
+        public static final int boardcast_button2=0x7f080003;
+        public static final int broadcastdemo=0x7f080013;
+        public static final int button1=0x7f08001d;
+        public static final int button2=0x7f08001a;
+        public static final int button3=0x7f08001b;
+        public static final int contentR_getbutton=0x7f080005;
+        public static final int contentR_setbutton=0x7f080006;
+        public static final int contentprovider_delete_button=0x7f08000a;
+        public static final int contentprovider_insert_button=0x7f080008;
+        public static final int contentprovider_query_button=0x7f080007;
+        public static final int contentprovider_update_button=0x7f080009;
+        public static final int contentproviderdemo=0x7f080012;
+        public static final int dail=0x7f08000f;
+        public static final int editText=0x7f08000b;
+        public static final int getValue=0x7f080021;
+        public static final int homescreen=0x7f08000c;
+        public static final int intent=0x7f080011;
+        public static final int intentgetbutton=0x7f080004;
+        public static final int mail=0x7f08000d;
+        public static final int mainnextpage=0x7f080019;
+        public static final int processbutton1=0x7f08001e;
+        public static final int processbutton2=0x7f08001f;
+        public static final int service=0x7f080010;
+        public static final int sharedpreferences=0x7f080016;
+        public static final int space1=0x7f080014;
+        public static final int storage_ebutton1=0x7f080026;
+        public static final int storage_ebutton2=0x7f080027;
+        public static final int storage_ibutton1=0x7f080024;
+        public static final int storage_ibutton2=0x7f080025;
+        public static final int storage_testMethods=0x7f080028;
+        public static final int storagedemo=0x7f080017;
+        public static final int textView1=0x7f080023;
+        public static final int unbind=0x7f080022;
     }
     public static final class layout {
-        public static final int activity_contentprovider=0x7f030000;
-        public static final int activity_intent=0x7f030001;
-        public static final int activity_main=0x7f030002;
-        public static final int activity_service=0x7f030003;
-        public static final int activity_sharedpreferences=0x7f030004;
+        public static final int activity_asyntask=0x7f030000;
+        public static final int activity_boardcast=0x7f030001;
+        public static final int activity_contentprovider=0x7f030002;
+        public static final int activity_intent=0x7f030003;
+        public static final int activity_main=0x7f030004;
+        public static final int activity_mainsecond=0x7f030005;
+        public static final int activity_process=0x7f030006;
+        public static final int activity_service=0x7f030007;
+        public static final int activity_sharedpreferences=0x7f030008;
+        public static final int activity_storage=0x7f030009;
+        public static final int activity_template_linearlayout=0x7f03000a;
     }
     public static final class menu {
         public static final int main=0x7f070000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int address=0x7f05000c;
-        public static final int app_name=0x7f050000;
-        public static final int bind=0x7f050006;
-        public static final int button=0x7f050003;
-        public static final int contentR_getbutton=0x7f050011;
-        public static final int contentR_setbutton=0x7f050012;
-        public static final int contentprovider=0x7f050013;
-        public static final int contentprovider_delete_button=0x7f050017;
-        public static final int contentprovider_insert_button=0x7f050015;
-        public static final int contentprovider_query_button=0x7f050014;
-        public static final int contentprovider_update_button=0x7f050016;
+        public static final int Estoragebutton1=0x7f040005;
+        public static final int Estoragebutton2=0x7f040006;
+        public static final int Istoragebutton1=0x7f040003;
+        public static final int Istoragebutton2=0x7f040004;
+        public static final int action_settings=0x7f04000c;
+        public static final int address=0x7f040017;
+        public static final int app_name=0x7f04000b;
+        public static final int asynctaskbutton=0x7f040001;
+        /**   在Aysn Task 中使用  
+         */
+        public static final int asynctaskdemo=0x7f040000;
+        public static final int bind=0x7f040011;
+        public static final int boardcastbutton1=0x7f040024;
+        public static final int boardcastbutton2=0x7f040025;
+        /**  在BroadCaster中使用 
+         */
+        public static final int boardcastdemo=0x7f040023;
+        public static final int button=0x7f04000e;
+        public static final int contentR_getbutton=0x7f04001c;
+        public static final int contentR_setbutton=0x7f04001d;
+        public static final int contentprovider=0x7f04001e;
+        public static final int contentprovider_delete_button=0x7f040022;
+        public static final int contentprovider_insert_button=0x7f040020;
+        public static final int contentprovider_query_button=0x7f04001f;
+        public static final int contentprovider_update_button=0x7f040021;
         /**  在Content Provider中使用 
          */
-        public static final int contentproviderdemo=0x7f05000e;
-        public static final int dail=0x7f05000d;
-        public static final int getvalue=0x7f050007;
-        public static final int hello_world=0x7f050004;
-        public static final int homescreen=0x7f05000a;
+        public static final int contentproviderdemo=0x7f040019;
+        public static final int dail=0x7f040018;
+        public static final int getvalue=0x7f040012;
+        public static final int hello_world=0x7f04000f;
+        public static final int homescreen=0x7f040015;
         /**  在Intent中使用 
          */
-        public static final int intent=0x7f050009;
-        public static final int intentaccess=0x7f05000f;
-        public static final int intentgetbutton=0x7f050010;
-        public static final int mail=0x7f05000b;
+        public static final int intent=0x7f040014;
+        public static final int intentaccess=0x7f04001a;
+        public static final int intentgetbutton=0x7f04001b;
+        public static final int mail=0x7f040016;
+        public static final int prcoessbutton1=0x7f040009;
+        public static final int prcoessbutton2=0x7f04000a;
+        /**   在Process 中使用  
+         */
+        public static final int prcoessdemo=0x7f040008;
         /**  在service中使用 
          */
-        public static final int service=0x7f050005;
+        public static final int service=0x7f040010;
         /**  在sharedpreferences中使用 
          */
-        public static final int sharedpreferences=0x7f050002;
-        public static final int unbind=0x7f050008;
+        public static final int sharedpreferences=0x7f04000d;
+        public static final int storage_testMethods=0x7f040007;
+        /**   在Storage 中使用  
+         */
+        public static final int storagedemo=0x7f040002;
+        public static final int tempatebutton1=0x7f040027;
+        public static final int tempatebutton2=0x7f040028;
+        /**   在Tempate 中使用  
+         */
+        public static final int templatedemo=0x7f040026;
+        public static final int unbind=0x7f040013;
     }
     public static final class style {
         /** 

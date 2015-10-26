@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 使用在各个class中的string  -->
+
+<resources>
+    
+    <!--  在Aysn Task 中使用  -->
+    <string name="asynctaskdemo">AsyncTask/Thread Demo</string>
+    <string name="asynctaskbutton">Load Image</string>
+    
+    <!--  在Storage 中使用  -->
+    <string name="storagedemo">Internal/External Storage</string>
+    <string name="Istoragebutton1">写入文件 to Internal Storage</string>
+	<string name="Istoragebutton2">读取文件from Internal Storage</string>
+	<string name="Estoragebutton1">创建目录to External Storage</string>
+	<string name="Estoragebutton2">删除目录from External Storage</string>
+	<string name="storage_testMethods">Test Methods</string>
+	
+	<!--  在Process 中使用  -->
+    <string name="prcoessdemo">Process Demo</string>
+    <string name="prcoessbutton1">启动另一个进程</string>
+    <string name="prcoessbutton2">获取目录信息</string>
+    
+</resources>

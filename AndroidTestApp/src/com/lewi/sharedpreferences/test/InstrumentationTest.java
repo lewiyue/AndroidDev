@@ -11,6 +11,18 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * 
+ * @author lyue
+ * 
+ * 实现功能：
+ * 
+ * 多次点击com.lewi.sharedpreferences.SharedPreferencesDemoActivity页面中的button，并验证textview的结果
+ * 	- 继承InstrumentationTestCase中方法，使用Instrumentation得到对应的Activity，并对Activity中的component进行test
+ *  - 需要在AndroidManifest中增加<instrumentation 和<uses-library 声明
+ *  - 如何运行？Todo
+ * 
+ */
 public class InstrumentationTest extends InstrumentationTestCase {
 
 	SharedPreferencesDemoActivity mActivity = null;

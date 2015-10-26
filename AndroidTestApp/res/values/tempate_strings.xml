@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 模板中使用到的string -->
+<resources>
+    
+    <!--  在Tempate 中使用  -->
+    <string name="templatedemo">Template Demo</string>
+    <string name="tempatebutton1">button1</string>
+    <string name="tempatebutton2">button2</string>
+    
+</resources>

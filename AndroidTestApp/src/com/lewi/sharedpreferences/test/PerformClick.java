@@ -2,6 +2,13 @@ package com.lewi.sharedpreferences.test;
 
 import android.widget.Button;
 
+/**
+ * 
+ * @author lyue
+ *
+ * 使用线程来执行按钮的点击操作
+ *
+ */
 public class PerformClick implements Runnable {
 
 	Button btn;
